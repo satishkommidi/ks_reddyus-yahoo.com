@@ -56,16 +56,17 @@ public class ProductDetailPage extends PageObject {
         addToCartButton.click();
     }
     public void continueShopping() {
-//    continueShoppingButton.waitUntilClickable();
+    continueShoppingButton.waitUntilClickable();
     continueShoppingButton.click();
     }
 
     public void proceedWithCheckout() {
         String strTotalItemsCost = totalItemsCost.getText();
 //        totalShippingCost.waitUntilVisible();
-//        String strTotalShippingCost = totalShippingCost.getText();
-        String strTotalBillingAmount = totalBillingAmount.getText();
-        System.out.println("strTotalItemsCost:" + strTotalItemsCost + "strTotalShippingCost+ strTotalShippingCost"  + "strTotalBillingAmount" + strTotalBillingAmount);
+       // String strTotalShippingCost = totalShippingCost.getText();
+       // totalBillingAmount.waitUntilVisible();
+        //String strTotalBillingAmount = totalBillingAmount.getText();
+        System.out.println("strTotalItemsCost:" + strTotalItemsCost);// + " ,strTotalShippingCost + strTotalShippingCost  and strTotalBillingAmount" + strTotalBillingAmount);
         proceedCheckoutButton.click();
     }
 
