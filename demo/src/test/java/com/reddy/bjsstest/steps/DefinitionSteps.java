@@ -12,21 +12,6 @@ public class DefinitionSteps {
     @Steps
     EndUserSteps reddy;
 
-   @Given("the user is on the Wikionary home page")
-    public void givenTheUserIsOnTheWikionaryHomePage() {
-        reddy.is_the_home_page();
-    }
-
-    @When("the user looks up the definition of the word '(.*)'")
-    public void whenTheUserLooksUpTheDefinitionOf(String word) {
-        reddy.looks_for(word);
-    }
-
-    @Then("they should see the definition '(.*)'")
-    public void thenTheyShouldSeeADefinitionContainingTheWords(String definition) {
-        reddy.should_see_definition(definition);
-    }
-
     // new steps
     @Given("the user is on the Automation home page")
     public void givenTheUserIsOnTheAutomationHomePage() {
@@ -35,7 +20,7 @@ public class DefinitionSteps {
 
     @When("the user looks up for dress key '(.*)'")
     public void whenTheUserLooksUpForTheKey(String word) {
-        reddy.looks_for1(word);
+        reddy.looks_for(word);
     }
 
 
