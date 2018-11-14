@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="fad60e88-b15c-4fd5-b8d8-2cb816b0bc9c" activeEnvironment="Default" name="API Calls" soapui-version="5.1.2" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="a0499ff3-675c-4cf5-8af5-e27a0c64dd1b" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8181" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:8181</con:endpoint></con:endpoints><con:resource name="Users" path="/api/users" id="47e9b72b-44e8-49fc-94b4-b79e0adf2d71"><con:settings/><con:parameters><con:parameter><con:name>page</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Users" id="8569d334-b8ce-4104-8ffc-71e4ac6c3904" method="GET"><con:settings/><con:parameters/><con:request name="List Users" id="8d81f1b8-9d8c-459d-a110-12980492f971" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="page" value="2" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>page</con:entry></con:parameterOrder></con:request></con:method><con:method name="Create" id="a15d7338-5f53-4729-85c4-96fc501a0645" method="POST"><con:settings/><con:parameters/><con:request name="Create User" id="d639148a-65b0-47e9-99ea-0f8d16da4b64" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "name": "morpheus",
+    "job": "leader"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry/></con:parameterOrder></con:request></con:method></con:resource><con:resource name="User" path="/api/users/2" id="5a9bcbaa-1015-418a-9ece-413f6d4427d7"><con:settings/><con:parameters/><con:method name="Single User" id="cdd8c3ed-7da0-431b-8fcb-d4b359913fc4" method="GET"><con:settings/><con:parameters/><con:request name="Single User" id="1128765e-0373-43b7-8a02-972e8cfdc7ca" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Update User" id="ed8bfce2-51a7-42e6-8d1d-df2737dd8fc4" method="PUT"><con:settings/><con:parameters/><con:request name="Update User" id="a4283e25-9f37-4a47-b438-4409862acf01" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "name": "morpheus",
+    "job": "zion resident"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Update User" id="ce7d8993-1bf1-43ec-a571-1692eb15bf33" method="PATCH"><con:settings/><con:parameters/><con:request name="Update User" id="ce4ef8ae-8496-4927-826b-4fefe2efce15" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "name": "morpheus",
+    "job": "zion resident"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Delete User" id="479e390e-c59b-4d48-82db-dec932ad3c32" method="DELETE"><con:settings/><con:parameters/><con:request name="Delete User" id="11b72aa3-895c-4482-8e6e-099a4c3e1609" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="User Not Found" path="/api/users/23" id="569a552a-d5aa-4b62-af53-12867cbff131"><con:settings/><con:parameters/><con:method name="Not Found" id="31c6a3e8-8ddb-4808-8255-cc1c0645e49b" method="GET"><con:settings/><con:parameters/><con:request name="Single User Not Found" id="d3b2534a-5609-4502-b88f-28916aaa7c32" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="List Resource" path="/api/unknown" id="7977189a-f41e-4e98-bdfe-89e2a3eb74b8"><con:settings/><con:parameters/><con:method name="Unknown" id="6baa5b3f-3a26-43c4-92eb-eefd85562a1d" method="GET"><con:settings/><con:parameters/><con:request name="List Resource" id="52ccead6-ff86-4ae2-8a5f-add359312f18" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="Single Resource" path="/api/unknown/2" id="9564051d-0993-45b7-be88-fc8ada29a44a"><con:settings/><con:parameters/><con:method name="Unknown" id="e26a2956-aa09-42aa-9ffd-bce63fe4730c" method="GET"><con:settings/><con:parameters/><con:request name="Single Resource" id="dd13bbdb-5015-4654-9ea0-aa63d14b34a0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="Resource Not Found" path="/api/unknown/23" id="7d6ba211-357d-4861-ab99-57695504d102"><con:settings/><con:parameters/><con:method name="Not Found" id="9876e69d-da52-4c8e-a12a-d1120ef18b71" method="GET"><con:settings/><con:parameters/><con:request name="Resource Not Found" id="93aa7378-9daf-4e83-8edd-d4470ce511d2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="Register" path="/api/register" id="3c8e5ff6-4152-45a2-a46d-1ef9b9aa4420"><con:settings/><con:parameters/><con:method name="Success" id="1a4ffa7e-b08b-4a08-8aa2-b41d33ce3e8f" method="POST"><con:settings/><con:parameters/><con:request name="Successful" id="e71741ee-555b-4e78-93a2-7dd766f81261" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "email": "sydney@fife",
+    "password": "pistol"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Unsuccess" id="1a4ffa7e-b08b-4a08-8aa2-b41d33ce3e8f" method="POST"><con:settings/><con:parameters/><con:request name="Unsuccessful" id="e71741ee-555b-4e78-93a2-7dd766f81261" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "email": "sydney@fife"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="Login" path="/api/login" id="d935ed37-66d7-42b3-964d-dcb4633fafec"><con:settings/><con:parameters/><con:method name="Success" id="cf3b32a6-5d04-43b8-97e0-3b94b5f4cda0" method="POST"><con:settings/><con:parameters/><con:request name="Successful" id="407c5b1d-eb5d-4ee0-b849-899767680628" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "email": "peter@klaven",
+    "password": "cityslicka"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Unsuccess" id="cf3b32a6-5d04-43b8-97e0-3b94b5f4cda0" method="POST"><con:settings/><con:parameters/><con:request name="Unsuccessful" id="407c5b1d-eb5d-4ee0-b849-899767680628" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "email": "peter@klaven"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="Users" path="/api/users" id="d19d71c6-fa1a-4908-bb80-72786c504f81"><con:settings/><con:parameters><con:parameter><con:name>delay</con:name><con:value>3</con:value><con:style>QUERY</con:style><con:default>3</con:default></con:parameter></con:parameters><con:method name="Delayed" id="63ab2f2d-4657-4c86-b5b7-d305304ef6ea" method="GET"><con:settings/><con:parameters/><con:request name="Delayed" id="7763f3b1-f8d8-4358-851e-7ee2d1c32aaa" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="eedcf235-8887-4631-82ce-073f40fee803" name="BJSS TestSuite"><con:description>TestSuite generated for REST Service [http://localhost:8181]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="67521da5-d688-4aff-b0cb-0c33e77c820b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="List Users TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [List Users] located at [/api/users]</con:description><con:settings/><con:testStep type="restrequest" name="Create User" id="752ab69c-a7c7-49a0-b9ed-f3b4bd748b18"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/users" methodName="Create" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Create User" id="d639148a-65b0-47e9-99ea-0f8d16da4b64" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "name": "morpheus",
+    "job": "leader"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="List Users" id="3664fea3-b193-4e90-95b5-c51f1694625a"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/users" methodName="Users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="List Users" id="8d81f1b8-9d8c-459d-a110-12980492f971" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="page" value="2" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>page</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="1fd79e58-7d51-456c-8ee7-97d5ef8f2960" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Single User TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Single User] located at [/api/users/2]</con:description><con:settings/><con:testStep type="restrequest" name="Single User" id="d9647696-7918-4392-b061-b5180405a66c"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/users/2" methodName="Single User" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Single User" id="1128765e-0373-43b7-8a02-972e8cfdc7ca" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Update User" id="888e151d-e2f1-4b29-8bec-fc754ffd77f1"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/users/2" methodName="Update User" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Update User" id="a4283e25-9f37-4a47-b438-4409862acf01" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "name": "morpheus",
+    "job": "zion resident"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Update User - Patch" id="59a96943-ff74-4976-ba0b-6a6fbbc57c23"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/users/2" methodName="Update User" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Update User - Patch" id="a4283e25-9f37-4a47-b438-4409862acf01" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "name": "morpheus",
+    "job": "zion resident"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Delete User" id="dca18d16-532d-455e-8739-8339c7f9671e"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/users/2" methodName="Delete User" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete User" id="11b72aa3-895c-4482-8e6e-099a4c3e1609" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="93dfdde8-8596-4f7e-b19e-842221dac455" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Single User Not Found TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Single User Not Found] located at [/api/users/23]</con:description><con:settings/><con:testStep type="restrequest" name="Not Found" id="9693d506-177d-43de-a19d-56b734bef520"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/users/23" methodName="Not Found" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Not Found" id="d3b2534a-5609-4502-b88f-28916aaa7c32" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="72110fd7-be06-491f-849e-d38f3e46d2ac" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="List Resource TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [List Resource] located at [/api/unknown]</con:description><con:settings/><con:testStep type="restrequest" name="List Resource" id="f48e9927-2158-4cbb-9fe0-64398eb3e14b"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/unknown" methodName="Unknown" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="List Resource" id="52ccead6-ff86-4ae2-8a5f-add359312f18" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="d1cf2576-6578-419a-a46a-ed13141cf4ce" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Single Resource TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Single Resource] located at [/api/unknown/2]</con:description><con:settings/><con:testStep type="restrequest" name="Single Resource" id="1f8f60ef-b910-4dc9-903e-3f1c6df656a3"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/unknown/2" methodName="Unknown" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Single Resource" id="dd13bbdb-5015-4654-9ea0-aa63d14b34a0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="0bad5e14-e114-43f0-9a29-8532f75b1330" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Single Resource Not Found TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Single Resource Not Found] located at [/api/unknown/23]</con:description><con:settings/><con:testStep type="restrequest" name="Single Resource Not Found" id="a715733f-b672-41f2-ac7e-a834223783e0"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/unknown/23" methodName="Not Found" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Single Resource Not Found" id="93aa7378-9daf-4e83-8edd-d4470ce511d2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="10179b9c-587e-4c32-9f31-a5cab1f8befa" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Register TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Register] located at [/api/register]</con:description><con:settings/><con:testStep type="restrequest" name="Successful" id="67993b2b-4bcf-456f-8c1f-3d55a613537a"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/register" methodName="Success" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Successful" id="e71741ee-555b-4e78-93a2-7dd766f81261" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "email": "sydney@fife",
+    "password": "pistol"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Unsuccessful" id="e795e1dd-8e7f-4de7-8e56-cce04fc3d4e0"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/register" methodName="Unsuccess" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Unsuccessful" id="e71741ee-555b-4e78-93a2-7dd766f81261" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "email": "sydney@fife"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="869449f2-e42a-47ba-bc48-380222d25eff" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Login TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Login] located at [/api/login]</con:description><con:settings/><con:testStep type="restrequest" name="Successful" id="97da6abf-cd2b-44f1-8dba-3c2ed6456419"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/login" methodName="Success" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Successful" id="407c5b1d-eb5d-4ee0-b849-899767680628" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "email": "peter@klaven",
+    "password": "cityslicka"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Unsuccessful" id="f4464665-e33c-4cc3-9eb3-b0f685242349"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/register" methodName="Unsuccess" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Unsuccessful" id="e71741ee-555b-4e78-93a2-7dd766f81261" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request>{
+    "email": "sydney@fife"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="87dff613-0b83-4f2c-a0c7-3db3d546946a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Delayed Response TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Delayed Response] located at [/api/users]</con:description><con:settings/><con:testStep type="restrequest" name="Delayed" id="fbc8a6f7-6b50-45e0-9e10-dc106d7f1747"><con:settings/><con:config service="http://localhost:8181" resourcePath="/api/users" methodName="Delayed" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delayed" id="7763f3b1-f8d8-4358-851e-7ee2d1c32aaa" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:restMockService id="9261a275-f651-47e1-9c5b-d349e2d8a028" port="8089" path="/" host="PoliTech" name="BJSS Backend Mock"><con:settings/><con:properties/><con:restMockAction name="List Users" method="GET" resourcePath="/api/users" id="95b87870-d497-4cd9-8a10-8f8c9e714f71"><con:settings/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="List Users Response" id="3add2786-cdc9-4e41-8739-620b8c1c948d" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "page": 2,
+    "per_page": 3,
+    "total": 12,
+    "total_pages": 4,
+    "data": [
+        {
+            "id": 4,
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg"
+        },
+        {
+            "id": 5,
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg"
+        },
+        {
+            "id": 6,
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg"
+        }
+    ]
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="Create User" method="POST" resourcePath="/api/users" id="bccc97f3-7e60-4c4b-83e9-64b990d87055"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Create Response" id="1e3b44c1-52f9-492d-a397-ccbe9fd7ca59" httpResponseStatus="201" mediaType="application/json"><con:settings/><con:responseContent>{
+    "name": "morpheus",
+    "job": "leader",
+    "id": "681",
+    "createdAt": "2018-11-14T21:49:13.232Z"
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="Single User" method="GET" resourcePath="/api/users/2" id="72ab6d13-8af6-4f8c-bcfe-a21dcf6acabf"><con:settings/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Single User Response" id="c5c574fe-ebf6-47b7-92a7-ce077bdba997" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "data": {
+        "id": 2,
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
+    }
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="UpdateUser" method="PUT" resourcePath="/api/users/2" id="9f29a69f-1c16-4c6d-ae7f-0d28a5c01e30"><con:settings/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="UpdateUser" id="e77c0ac4-3ed9-4c0b-8cb0-61abc8be8c9a" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2018-11-14T23:23:28.473Z"
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="UpdateUser-Patch" method="PATCH" resourcePath="/api/users/2" id="4c7d6e69-f6d7-442b-a951-481519b25e62"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="UpdateUser" id="024063d4-46ea-4e7e-920e-a26d3005a237" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2018-11-14T23:23:06.666Z"
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="DeleteUser" method="DELETE" resourcePath="/api/users/2" id="8600d717-376c-4349-bf28-7e94cc778ec0"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Delete" id="44917343-7f36-416c-b7c3-3f1284661b5b" httpResponseStatus="204" mediaType="application/json"><con:settings/><con:responseContent/></con:response></con:restMockAction><con:restMockAction name="Single User" method="GET" resourcePath="/api/users/23" id="50013a0d-b6bc-4142-806d-c446b353861e"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Not Found" id="88c89e54-7aef-4dc1-998f-094a43a4dcae" httpResponseStatus="404" mediaType="application/json"><con:settings/><con:responseContent>{}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="List Resource" method="GET" resourcePath="/api/unknown" id="cd2ef175-de45-4741-89c4-d520d931f10e"><con:settings/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Unknown" id="b861c8f7-5df0-41fd-a871-857f32510099" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "page": 1,
+    "per_page": 3,
+    "total": 12,
+    "total_pages": 4,
+    "data": [
+        {
+            "id": 1,
+            "name": "cerulean",
+            "year": 2000,
+            "color": "#98B2D1",
+            "pantone_value": "15-4020"
+        },
+        {
+            "id": 2,
+            "name": "fuchsia rose",
+            "year": 2001,
+            "color": "#C74375",
+            "pantone_value": "17-2031"
+        },
+        {
+            "id": 3,
+            "name": "true red",
+            "year": 2002,
+            "color": "#BF1932",
+            "pantone_value": "19-1664"
+        }
+    ]
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="Single Resource" method="GET" resourcePath="/api/unknown/2" id="2c1c4cbc-7a97-4539-b66d-9e30843f1e90"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Unknown" id="c3dfb9c2-fd7e-441e-88ea-76432a06e92b" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "data": {
+        "id": 2,
+        "name": "fuchsia rose",
+        "year": 2001,
+        "color": "#C74375",
+        "pantone_value": "17-2031"
+    }
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="Single Resource" method="GET" resourcePath="/api/unknown/23" id="b93c9d3f-5ae8-4561-9f0c-45e33b0f99f2"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Not Found" id="86b48eab-b63a-4761-bc50-03f94d49e824" httpResponseStatus="404" mediaType="application/json"><con:settings/><con:responseContent/></con:response></con:restMockAction><con:restMockAction name="Register" method="POST" resourcePath="/api/register" id="70875a8a-1709-4dd7-bbaf-2b8fc29403c8"><con:settings/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Successful" id="3f247340-f097-424e-b454-394c20117e41" httpResponseStatus="201" mediaType="application/json"><con:settings/><con:responseContent>{
+    "token": "QpwL5tke4Pnpja7X"
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="Register" method="POST" resourcePath="/api/register" id="a401fc27-423a-442c-8f38-381151f11302"><con:settings/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Unsuccessful" id="d7285acf-f1a9-4887-b77f-792ae9d60665" httpResponseStatus="400" mediaType="application/json"><con:settings/><con:responseContent>{
+    "error": "Missing password"
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="Login" method="POST" resourcePath="/api/login" id="38ba66a8-3367-472f-8f2e-5b7de1c92123"><con:settings/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Successful" id="62beb148-f99b-41ff-8c48-b316c54792fe" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "token": "QpwL5tke4Pnpja7X"
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="Login" method="POST" resourcePath="/api/login" id="c86a7996-63d4-4656-90bc-11e9befa11d5"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Unsuccessful" id="e34c190b-58ec-4d6f-9db4-a931b2d00cf3" httpResponseStatus="400" mediaType="application/json"><con:settings/><con:responseContent>{
+    "error": "Missing password"
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="Delayed" method="GET" resourcePath="/api/users" id="0a302e3b-831e-4405-836b-5fdad103c19e"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Delayed" id="d6f22e2a-0d4b-4844-85b4-81c8d84c03d2" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "page": 1,
+    "per_page": 3,
+    "total": 12,
+    "total_pages": 4,
+    "data": [
+        {
+            "id": 1,
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"
+        },
+        {
+            "id": 2,
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
+        },
+        {
+            "id": 3,
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"
+        }
+    ]
+}</con:responseContent></con:response></con:restMockAction></con:restMockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
